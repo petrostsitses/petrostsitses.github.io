@@ -20,7 +20,7 @@
 
     /* HERO */
     header {
-      padding: 100px 20px 40px;
+      padding: 90px 20px 40px;
       background: #111827;
     }
 
@@ -31,44 +31,69 @@
 
     .subtitle {
       color: #94a3b8;
-      max-width: 700px;
+      max-width: 650px;
       margin: 20px auto 0;
       line-height: 1.6;
     }
 
-    /* NAVBAR (not rounded) */
+    /* NAVBAR */
     nav {
-      margin-top: 30px;
+      margin-top: 25px;
       display: flex;
       justify-content: center;
-      gap: 25px;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
-      font-size: 14px;
-      letter-spacing: 1px;
+      font-size: 13px;
+
+      padding: 8px 14px;
+      border-radius: 999px;
+
+      border: 1px solid #334155;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      color: #38bdf8;
+      background: #38bdf8;
+      color: black;
+      border-color: #38bdf8;
     }
 
     section {
       padding: 60px 20px;
     }
 
-    .card {
-      background: #1e293b;
-      margin: 10px auto;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 500px;
+    /* PROJECTS */
+    .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
-    /* CONTACT ICONS */
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    /* CONTACT */
     .contact a {
       display: inline-flex;
       align-items: center;
@@ -79,8 +104,9 @@
       font-weight: bold;
     }
 
-    .contact a:hover {
-      color: #0ea5e9;
+    .contact a img {
+      width: 18px;
+      height: 18px;
     }
 
     footer {
@@ -107,48 +133,48 @@
 
 <body>
 
-<!-- HERO -->
 <header>
   <h1>Petros Tsitses</h1>
 
-  <!-- NAVBAR UNDER NAME -->
   <nav>
     <a href="#about">ABOUT</a>
     <a href="#projects">PROJECTS</a>
     <a href="#contact">CONTACT</a>
   </nav>
 
-  <!-- SHORT CLEAN SUMMARY -->
   <p class="subtitle">
-    Junior Software Developer focused on Backend Development.
-    I enjoy building clean and scalable applications and continuously improving my skills.
+    Junior Software Developer focused on Backend Development.  
+    Passionate about building clean, scalable applications and continuously improving my skills.
   </p>
 </header>
 
-<!-- ABOUT -->
 <section id="about">
   <h2>About</h2>
-  <div class="card">
-    Passionate about software development, with focus on Java and backend systems. Currently seeking my first Junior Developer role.
-  </div>
+  <p class="subtitle">
+    I am a Junior Software Developer based in Ioannina, focused on backend systems with Java and Spring Boot.
+  </p>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="card">
-    <h3>Todo App</h3>
-    <p>Simple task management application</p>
-  </div>
+  <div class="projects">
 
-  <div class="card">
-    <h3>API Project</h3>
-    <p>Backend service built with Java Spring Boot</p>
+    <div class="card">
+      <h3>Todo App</h3>
+      <p>Simple task manager application.</p>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Spring Boot API</h3>
+      <p>REST API with Java + PostgreSQL.</p>
+      <a href="#">GitHub</a>
+    </div>
+
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="contact">
   <h2>Contact</h2>
 
@@ -156,8 +182,9 @@
     📧 Email
   </a>
 
-  <a href="https://linkedin.com" target="_blank">
-    💼 LinkedIn
+  <a href="https://www.linkedin.com/in/petros-tsitses/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png"/>
+    LinkedIn
   </a>
 
   <a href="https://github.com/" target="_blank">
@@ -165,12 +192,10 @@
   </a>
 </section>
 
-<!-- FOOTER -->
 <footer>
   Built by Petros 🚀
 </footer>
 
-<!-- TOP BUTTON -->
 <button class="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
   ↑ Top
 </button>
