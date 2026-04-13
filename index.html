@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <title>Petros Tsitses | Portfolio</title>
 
   <style>
     html {
@@ -15,49 +15,49 @@
       font-family: Arial, sans-serif;
       background: #0f172a;
       color: white;
+      text-align: center;
     }
 
-    /* NAVBAR */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
+    /* HERO */
+    header {
+      padding: 100px 20px 40px;
       background: #111827;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 44px;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      max-width: 700px;
+      margin: 20px auto 0;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR (not rounded) */
+    nav {
+      margin-top: 30px;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      padding: 15px;
-      z-index: 1000;
+      gap: 25px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 1px;
     }
 
     nav a:hover {
       color: #38bdf8;
     }
 
-    header {
-      padding: 120px 20px 60px;
-      text-align: center;
-      background: #111827;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 42px;
-    }
-
-    p {
-      color: #cbd5e1;
-    }
-
     section {
       padding: 60px 20px;
-      text-align: center;
     }
 
     .card {
@@ -68,57 +68,68 @@
       max-width: 500px;
     }
 
-    a {
+    /* CONTACT ICONS */
+    .contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 10px;
       color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    /* BACK TO TOP BUTTON */
+    .contact a:hover {
+      color: #0ea5e9;
+    }
+
+    footer {
+      background: #111827;
+      padding: 30px;
+      margin-top: 40px;
+      color: #94a3b8;
+    }
+
+    /* TOP BUTTON */
     .top-btn {
       position: fixed;
       bottom: 20px;
       right: 20px;
       background: #38bdf8;
-      color: black;
       border: none;
-      padding: 10px 15px;
+      padding: 10px 14px;
       border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
-    }
-
-    .top-btn:hover {
-      background: #0ea5e9;
-    }
-
-    footer {
-      background: #111827;
-      padding: 40px 20px;
-      text-align: center;
-      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<!-- HEADER -->
+<!-- HERO -->
 <header>
-  <h1>Hi, I'm Petros 👋</h1>
-  <p>Entry Level Developer</p>
+  <h1>Petros Tsitses</h1>
+
+  <!-- NAVBAR UNDER NAME -->
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <!-- SHORT CLEAN SUMMARY -->
+  <p class="subtitle">
+    Junior Software Developer focused on Backend Development.
+    I enjoy building clean and scalable applications and continuously improving my skills.
+  </p>
 </header>
 
 <!-- ABOUT -->
 <section id="about">
-  <h2>About Me</h2>
+  <h2>About</h2>
   <div class="card">
-    I am learning Web Development (HTML, CSS, JavaScript) and building projects to become a junior developer.
+    Passionate about software development, with focus on Java and backend systems. Currently seeking my first Junior Developer role.
   </div>
 </section>
 
@@ -128,32 +139,38 @@
 
   <div class="card">
     <h3>Todo App</h3>
-    <p>Simple task manager application</p>
-    <a href="#">GitHub Link</a>
+    <p>Simple task management application</p>
   </div>
 
   <div class="card">
-    <h3>Weather App</h3>
-    <p>API-based weather application</p>
-    <a href="#">GitHub Link</a>
+    <h3>API Project</h3>
+    <p>Backend service built with Java Spring Boot</p>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="contact">
   <h2>Contact</h2>
-  <div class="card">
-    <p>Email: youremail@example.com</p>
-    <p>GitHub: <a href="https://github.com/">profile</a></p>
-  </div>
+
+  <a href="mailto:youremail@example.com">
+    📧 Email
+  </a>
+
+  <a href="https://linkedin.com" target="_blank">
+    💼 LinkedIn
+  </a>
+
+  <a href="https://github.com/" target="_blank">
+    💻 GitHub
+  </a>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>Built by Petros 🚀</p>
+  Built by Petros 🚀
 </footer>
 
-<!-- BACK TO TOP BUTTON -->
+<!-- TOP BUTTON -->
 <button class="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
   ↑ Top
 </button>
