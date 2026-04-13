@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
+
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
       background: #0f172a;
       color: white;
-      text-align: center;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #111827;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
     }
 
     header {
-      padding: 60px 20px;
+      padding: 120px 20px 60px;
+      text-align: center;
       background: #111827;
     }
 
     h1 {
       margin: 0;
-      font-size: 40px;
+      font-size: 42px;
     }
 
     p {
@@ -28,7 +56,8 @@
     }
 
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     .card {
@@ -41,52 +70,93 @@
 
     a {
       color: #38bdf8;
-      text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    /* BACK TO TOP BUTTON */
+    .top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #38bdf8;
+      color: black;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .top-btn:hover {
+      background: #0ea5e9;
+    }
+
+    footer {
+      background: #111827;
+      padding: 40px 20px;
+      text-align: center;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HEADER -->
 <header>
-  <h1>Γεια 👋 Είμαι ο Πέτρος</h1>
-  <p>Entry Level Developer 🚀</p>
+  <h1>Hi, I'm Petros 👋</h1>
+  <p>Entry Level Developer</p>
 </header>
 
-<section>
+<!-- ABOUT -->
+<section id="about">
   <h2>About Me</h2>
   <div class="card">
-    Μαθαίνω Web Development (HTML, CSS, JavaScript) και χτίζω projects για να γίνω junior developer.
+    I am learning Web Development (HTML, CSS, JavaScript) and building projects to become a junior developer.
   </div>
 </section>
 
-<section>
+<!-- PROJECTS -->
+<section id="projects">
   <h2>Projects</h2>
 
   <div class="card">
     <h3>Todo App</h3>
-    <p>Simple εφαρμογή για tasks</p>
-    <a href="https://github.com/">GitHub Link</a>
+    <p>Simple task manager application</p>
+    <a href="#">GitHub Link</a>
   </div>
 
   <div class="card">
     <h3>Weather App</h3>
-    <p>Εμφανίζει καιρό με API</p>
-    <a href="https://github.com/">GitHub Link</a>
+    <p>API-based weather application</p>
+    <a href="#">GitHub Link</a>
   </div>
 </section>
 
-<section>
+<!-- CONTACT -->
+<section id="contact">
   <h2>Contact</h2>
   <div class="card">
-    Email: youremail@example.com <br>
-    GitHub: <a href="https://github.com/">profile</a>
+    <p>Email: youremail@example.com</p>
+    <p>GitHub: <a href="https://github.com/">profile</a></p>
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Built by Petros 🚀</p>
+</footer>
+
+<!-- BACK TO TOP BUTTON -->
+<button class="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+  ↑ Top
+</button>
 
 </body>
 </html>
