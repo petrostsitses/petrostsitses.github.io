@@ -112,11 +112,11 @@
 
     /* PROJECTS */
     .projects {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  }
 
     .card {
       background: #1e293b;
@@ -138,15 +138,28 @@
     }
 
     .card a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.25s ease;
+}
 
-    .card a:hover {
-      text-decoration: underline;
-    }
+.card a:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
 
+    .card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+}
     /* CONTACT */
     .contact a {
       display: inline-flex;
