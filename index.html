@@ -87,28 +87,48 @@
     }
 
     /* SKILLS */
-    .skills {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
+    .skills-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
-    .skill {
-      background: #1e293b;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 13px;
-      border: 1px solid #334155;
-      transition: all 0.25s ease;
-    }
+.skill-category h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #e2e8f0;
+}
 
-    .skill:hover {
-      background: #38bdf8;
-      color: #0f172a;
-      transform: translateY(-2px);
-    }
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #1e293b;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+
+  border: 1px solid #334155;
+  transition: 0.2s;
+}
+
+.skill:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  transform: translateY(-2px);
+}
+
+.skill img {
+  width: 16px;
+  height: 16px;
+}
 
     /* PROJECTS */
     .projects {
@@ -253,16 +273,90 @@
 <section id="skills">
   <h2>Skills</h2>
 
-  <div class="skills">
-    <span class="skill">Java</span>
-    <span class="skill">Spring Boot</span>
-    <span class="skill">Python</span>
-    <span class="skill">C#</span>
-    <span class="skill">SQL</span>
-    <span class="skill">HTML</span>
-    <span class="skill">CSS</span>
-    <span class="skill">JavaScript</span>
-    <span class="skill">Git</span>
+  <div class="skills-group">
+
+    <div class="skill-category">
+      <h3>Backend</h3>
+
+      <div class="skills">
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+          Java
+        </span>
+
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
+          Spring Boot
+        </span>
+
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+          Python
+        </span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Web</h3>
+
+      <div class="skills">
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+          HTML
+        </span>
+
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+          CSS
+        </span>
+
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          JavaScript
+        </span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Databases</h3>
+
+      <div class="skills">
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+          PostgreSQL
+        </span>
+
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+          MySQL
+        </span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Tools</h3>
+
+      <div class="skills">
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+          Git
+        </span>
+
+        <span class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" />
+          Docker
+        </span>
+
+        <span class="skill">
+          Gradle
+        </span>
+
+        <span class="skill">
+          DBeaver
+        </span>
+      </div>
+    </div>
+
   </div>
 </section>
 
