@@ -18,6 +18,7 @@
       text-align: center;
     }
 
+    /* HERO */
     header {
       padding: 90px 20px 40px;
       background: #111827;
@@ -52,7 +53,6 @@
       padding: 8px 14px;
       border-radius: 999px;
       border: 1px solid #334155;
-
       transition: 0.3s;
     }
 
@@ -64,6 +64,30 @@
 
     section {
       padding: 60px 20px;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      border: 1px solid #334155;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: #38bdf8;
+      color: black;
+      border-color: #38bdf8;
     }
 
     /* PROJECTS */
@@ -134,16 +158,15 @@
 <header id="home">
   <h1>Petros Tsitses</h1>
 
-  <!-- TEXT FIRST -->
   <p class="subtitle">
-    Junior Software Developer focused on Backend Development.  
-    Passionate about building clean, scalable applications and continuously improving my skills.
+    Junior Software Developer focused on backend development.  
+    Passionate about building clean and scalable applications.
   </p>
 
-  <!-- NAVBAR AFTER -->
   <nav>
     <a href="#home">HOME</a>
     <a href="#about">ABOUT</a>
+    <a href="#skills">SKILLS</a>
     <a href="#projects">PROJECTS</a>
     <a href="#contact">CONTACT</a>
   </nav>
@@ -153,13 +176,25 @@
   <h2>About</h2>
 
   <p class="subtitle">
-    I am a Junior Software Developer based in Ioannina with a strong focus on backend development.
-    I have hands-on experience with Java, Spring Boot and databases, and I enjoy building scalable and clean software solutions.
+    I am a Junior Software Developer based in Ioannina, focused on backend development with Java and Spring Boot.
+    I enjoy building clean and efficient software and continuously improving my skills.
   </p>
+</section>
 
-  <p class="subtitle">
-    I am currently looking for my first opportunity as a Junior Developer, where I can grow, contribute, and gain real-world experience.
-  </p>
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills">
+    <span class="skill">Java</span>
+    <span class="skill">Spring Boot</span>
+    <span class="skill">Python</span>
+    <span class="skill">C#</span>
+    <span class="skill">SQL</span>
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">Git</span>
+  </div>
 </section>
 
 <section id="projects">
@@ -175,7 +210,7 @@
 
     <div class="card">
       <h3>Spring Boot API</h3>
-      <p>REST API with Java and PostgreSQL.</p>
+      <p>REST API built with Java and PostgreSQL.</p>
       <a href="#">GitHub</a>
     </div>
 
@@ -185,18 +220,14 @@
 <section id="contact" class="contact">
   <h2>Contact</h2>
 
-  <a href="mailto:youremail@example.com">
-    📧 Email
-  </a>
+  <a href="mailto:youremail@example.com">📧 Email</a>
 
   <a href="https://linkedin.com" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/24/174/174857.png"/>
     LinkedIn
   </a>
 
-  <a href="https://github.com/" target="_blank">
-    💻 GitHub
-  </a>
+  <a href="https://github.com/" target="_blank">💻 GitHub</a>
 </section>
 
 <footer>
