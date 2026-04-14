@@ -6,150 +6,184 @@
   <title>Petros Tsitses | Portfolio</title>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+   html {
+  scroll-behavior: smooth;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+}
 
-    /* HERO */
-    header {
-      padding: 90px 20px 40px;
-      background: #111827;
-    }
+/* HERO */
+header {
+  padding: 100px 20px 50px;
+  background: #111827;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 44px;
-    }
+h1 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 1px;
+}
 
-    .subtitle {
-      color: #94a3b8;
-      max-width: 650px;
-      margin: 20px auto;
-      line-height: 1.6;
-    }
+.subtitle {
+  color: #94a3b8;
+  max-width: 700px;
+  margin: 18px auto;
+  font-size: 15px;
+}
 
-    /* NAVBAR */
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 13px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
 
-      padding: 8px 14px;
-      border-radius: 999px;
-      border: 1px solid #334155;
-      transition: 0.3s;
-    }
+  padding: 8px 16px;
+  border-radius: 999px;
 
-    nav a:hover {
-      background: #38bdf8;
-      color: black;
-      border-color: #38bdf8;
-    }
+  border: 1px solid #334155;
+  transition: all 0.25s ease;
+}
 
-    section {
-      padding: 60px 20px;
-    }
+nav a:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+}
 
-    /* SKILLS */
-    .skills {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
+/* SECTIONS */
+section {
+  padding: 70px 20px;
+}
 
-    .skill {
-      background: #1e293b;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 13px;
-      border: 1px solid #334155;
-      transition: 0.3s;
-    }
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
 
-    .skill:hover {
-      background: #38bdf8;
-      color: black;
-      border-color: #38bdf8;
-    }
+/* SKILLS */
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
 
-    /* PROJECTS */
-    .projects {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
+.skill {
+  background: #1e293b;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid #334155;
+  transition: all 0.25s ease;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      width: 260px;
-      transition: 0.3s;
-    }
+.skill:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  transform: translateY(-2px);
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+/* PROJECTS */
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-    .card a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
+.card {
+  background: #1e293b;
+  padding: 22px;
+  border-radius: 14px;
+  width: 260px;
+  border: 1px solid #334155;
+  transition: all 0.25s ease;
+}
 
-    /* CONTACT */
-    .contact a {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin: 10px;
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
 
-    .contact a img {
-      width: 18px;
-      height: 18px;
-    }
+.card a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    footer {
-      background: #111827;
-      padding: 30px;
-      margin-top: 40px;
-      color: #94a3b8;
-    }
+.card a:hover {
+  text-decoration: underline;
+}
 
-    /* TOP BUTTON */
-    .top-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #38bdf8;
-      border: none;
-      padding: 10px 14px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
+/* CONTACT */
+.contact a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.contact a:hover {
+  color: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+.contact a img {
+  width: 18px;
+  height: 18px;
+}
+
+/* FOOTER */
+footer {
+  background: #111827;
+  padding: 35px;
+  margin-top: 50px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* TOP BUTTON */
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #38bdf8;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.top-btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
   </style>
 </head>
 
